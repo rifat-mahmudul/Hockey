@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light" lang="en">
+<html data-theme="light" lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
 </head>
 <body>
     
-    <!-- ------------header------------ -->
-    <header>
-        <div class="max-w-[90%] flex justify-between items-center mx-auto py-3">
+    <!-- ------------header start------------ -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg">
+        <div class="max-w-[1150px] flex justify-between items-center mx-auto py-5">
             <div>
                 <a href="#home"><h1 class="text-3xl font-[800]">Hockey<span class="text-color-first">'</span>s</h1></a>
             </div>
@@ -31,11 +31,37 @@
                 </nav>
             </div>
     
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-5">
                 <i class="ri-search-line"></i>
                 <button class="bg-color-first px-3 py-2 rounded-[5px] hover:bg-color-secound transition-[0.5s] text-white font-[700]">Get Ticket</button>
             </div>
         </div>
     </header>
+    <!-- ------------header end------------ -->
+
+
+    <!-- --------------main start-------------- -->
+    <main>
+        <!-- -------------home-section start------------- -->
+        <section  id="home">
+            <div class="h-[500px] w-[1150px] mx-auto relative" style="background-image: url(Images/1.png); background-repeat: no-repeat; background-size: cover; background-color: rgba(0, 0, 0, 0.105); background-blend-mode: overlay;border-radius: 15px;">
+
+                <div class="absolute top-[340px] left-[700px] rounded-lg w-[420px] bg-black py-4 px-4 box-border">
+                        <h3 class="text-2xl text-white font-[700] mb-4">Meet all the heroes from the field</h3>
+                        <p class="font-[500] text-[gray]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+                <div class="absolute top-[430px] left-[30px]">
+                    <i class="ri-arrow-right-circle-fill text-4xl font-[900] cursor-pointer"></i>
+                    <i class="ri-arrow-left-circle-fill text-4xl font-[900] cursor-pointer"></i>
+                </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- -------------home-section end------------- -->
+    </main>
+    <!-- --------------main end-------------- -->
 </body>
 </html>
